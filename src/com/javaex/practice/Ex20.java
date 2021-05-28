@@ -7,8 +7,8 @@ public class Ex20 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner (System.in);
+		int x = (int)(Math.random()*100)+1;
 		
-		int x = 23;
 		boolean action = true;
 		
 		System.out.println("======================");
@@ -16,6 +16,7 @@ public class Ex20 {
 		System.out.println("======================");
 		
 		while (action) {
+			
 			boolean action2 = true;
 			
 			System.out.print(">>");
@@ -44,6 +45,7 @@ public class Ex20 {
 						System.out.println("======================");
 						System.out.println("   [숫자맞추기게임 재시작]   ");
 						System.out.println("======================");
+						x = (int)(Math.random()*100)+1;
 						action2 = false;
 					}else {
 						System.out.println("잘못 입력하셨습니다.\n");
